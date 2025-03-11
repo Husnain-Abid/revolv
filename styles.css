@@ -19,8 +19,14 @@ body {
     position: relative;
     width: 100%;
     max-width: 800px;
-    height: 1000px;
+    height: 650px;
     overflow: hidden;
+    /* Apply gradient at the bottom */
+    background-image: linear-gradient(to bottom, transparent 80%, #113352 100%);
+    background-size: 500px 100%;
+    /* 300px width, full height */
+    background-position: center bottom;
+    /* Position the gradient at the bottom */
 }
 
 .carousel-title {
@@ -72,6 +78,158 @@ body {
     color: #ddd;
 }
 
+
+.carousel-image {
+    position: relative;
+}
+
+
+/* .carousel-image-1 start  */
+.carousel-image-1 .img1 {
+    transform: scale(0.4);
+    position: absolute;
+    top: -60px;
+    left: -200px;
+    z-index: 3;
+}
+
+.carousel-image-1 .img2 {
+    transform: scale(0.4) rotate(20deg);
+    ;
+    position: absolute;
+    top: -100px;
+    left: -250px;
+    z-index: 2;
+
+}
+
+.carousel-image-1 .img3 {
+    transform: scale(0.9);
+    position: absolute;
+    top: -230px;
+    left: -600px;
+}
+
+/* .carousel-image 2  */
+.carousel-image-2 .img1 {
+    transform: scale(0.6);
+    position: absolute;
+    top: -60px;
+    left: -250px;
+    z-index: 3;
+}
+
+.carousel-image-2 .img2 {
+    transform: scale(0.4) rotate(0deg);
+    position: absolute;
+    top: -10px;
+    left: -450px;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.carousel-image-2 .img3 {
+    transform: scale(1.2) rotate(30deg);
+    position: absolute;
+    top: -230px;
+    left: -500px;
+    opacity: 0.3;
+}
+
+/* .carousel-image-3  */
+.carousel-image-3 .img1 {
+    transform: scale(0.4);
+    position: absolute;
+    top: -60px;
+    left: -250px;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+.carousel-image-3 .img2 {
+    transform: scale(0.5) rotate(0deg);
+    position: absolute;
+    top: -90px;
+    left: -450px;
+    z-index: 3;
+
+}
+
+.carousel-image-3 .img3 {
+    transform: scale(1.2) rotate(-10deg);
+    position: absolute;
+    top: -230px;
+    right: -500px;
+    opacity: 0.3;
+}
+
+
+/* .carousel-image-4  */
+.carousel-image-4 .img3 {
+    transform: scale(0.8) rotate(-90deg);
+    position: absolute;
+    top: -380px;
+    right: -500px;
+    opacity: 1;
+}
+
+
+/* .carousel-image-5  */
+
+
+.carousel-image-5 .img3 {
+    transform: scale(0.7) rotate(-80deg);
+    position: absolute;
+    top: -450px;
+    right: -600px;
+    opacity: 0.4;
+}
+
+.carousel-image-5 .img4 {
+    transform: scale(0.5) rotate(20deg);
+    position: absolute;
+    top: -380px;
+    right: -700px;
+    opacity: 1;
+}
+
+/* .carousel-image-6  */
+.carousel-image-6 .img3 {
+    transform: scale(0.7) rotate(-80deg);
+    position: absolute;
+    top: -450px;
+    right: -600px;
+    opacity: 0.4;
+}
+
+.carousel-image-6 .img4 {
+    transform: scale(0.5) rotate(40deg);
+    position: absolute;
+    top: -380px;
+    right: -700px;
+    opacity: 1;
+}
+
+
+/* .carousel-image-7  */
+.carousel-image-7 .img5 {
+    transform: scale(0.7);
+    position: absolute;
+    top: -80px;
+    right: -250px;
+    opacity: 0.4;
+}
+
+/* .carousel-image-8  */
+.carousel-image-8 .img3 {
+    transform: scale(0.8) rotate(-80deg);
+    position: absolute;
+    top: -480px;
+    right: -520px;
+    opacity: 1;
+}
+
+
 .carousel-background {
     position: absolute;
     top: 180px;
@@ -103,4 +261,190 @@ body {
 
 .carousel-button:hover {
     transform: scale(1.2);
+}
+
+
+
+/* Add responsive behavior */
+@media screen and (max-width: 768px) {
+
+    .carousel-title {
+        font-size: 20px;
+        /* Smaller title font */
+    }
+
+    .carousel-content h2 {
+        font-size: 18px;
+        /* Adjust header size */
+    }
+
+    .carousel-content p {
+        font-size: 12px;
+        /* Adjust paragraph font size */
+    }
+
+    .carousel-content {
+        max-width: 480px;
+    }
+
+
+
+
+
+
+}
+
+/* Further adjust for very small screens (e.g., mobile) */
+@media screen and (max-width: 480px) {
+    .carousel-content {
+        max-width: 350px;
+    }
+
+
+    /* .carousel-image-1 start  */
+    .carousel-image-1 .img1 {
+        transform: scale(0.2);
+        position: absolute;
+        top: -60px;
+        left: -250px;
+        z-index: 3;
+    }
+
+    .carousel-image-1 .img2 {
+        transform: scale(0.2) rotate(20deg);
+        ;
+        position: absolute;
+        top: -100px;
+        left: -300px;
+        z-index: 2;
+
+    }
+
+    .carousel-image-1 .img3 {
+        transform: scale(0.6);
+        position: absolute;
+        top: -280px;
+        left: -600px;
+    }
+
+    /* .carousel-image 2  */
+    .carousel-image-2 .img1 {
+        transform: scale(0.2);
+        position: absolute;
+        top: -60px;
+        left: -350px;
+        z-index: 3;
+    }
+
+    .carousel-image-2 .img2 {
+        transform: scale(0.2) rotate(0deg);
+        position: absolute;
+        top: -10px;
+        left: -450px;
+        z-index: 2;
+        opacity: 0.5;
+    }
+
+    .carousel-image-2 .img3 {
+        transform: scale(0.8) rotate(30deg);
+        position: absolute;
+        top: -230px;
+        left: -550px;
+        opacity: 0.3;
+    }
+
+    /* .carousel-image-3  */
+    .carousel-image-3 .img1 {
+        transform: scale(0.2);
+        position: absolute;
+        top: -60px;
+        left: -350px;
+        z-index: 2;
+        opacity: 0.9;
+    }
+
+    .carousel-image-3 .img2 {
+        transform: scale(0.2) rotate(0deg);
+        position: absolute;
+        top: -90px;
+        left: -450px;
+        z-index: 3;
+
+    }
+
+    .carousel-image-3 .img3 {
+        transform: scale(0.8) rotate(-10deg);
+        position: absolute;
+        top: -230px;
+        right: -650px;
+        opacity: 0.3;
+    }
+
+
+    /* .carousel-image-4  */
+    .carousel-image-4 .img3 {
+        transform: scale(0.4) rotate(-90deg);
+        position: absolute;
+        top: -480px;
+        right: -550px;
+        opacity: 1;
+    }
+
+
+    /* .carousel-image-5  */
+
+    .carousel-image-5 .img3 {
+        transform: scale(0.4) rotate(-80deg);
+        position: absolute;
+        top: -420px;
+        right: -550px;
+        opacity: 0.4;
+    }
+
+    .carousel-image-5 .img4 {
+        transform: scale(0.4) rotate(20deg);
+        position: absolute;
+        top: -380px;
+        right: -700px;
+        opacity: 1;
+    }
+
+    /* .carousel-image-6  */
+    .carousel-image-6 .img3 {
+        transform: scale(0.4) rotate(-80deg);
+        position: absolute;
+        top: -450px;
+        right: -550px;
+        opacity: 0.4;
+    }
+
+    .carousel-image-6 .img4 {
+        transform: scale(0.3) rotate(40deg);
+        position: absolute;
+        top: -380px;
+        right: -700px;
+        opacity: 1;
+    }
+
+
+    /* .carousel-image-7  */
+    .carousel-image-7 .img5 {
+        transform: scale(0.7);
+        position: absolute;
+        top: -80px;
+        right: -250px;
+        opacity: 0.4;
+    }
+
+    /* .carousel-image-8  */
+    .carousel-image-8 .img3 {
+        transform: scale(0.4) rotate(-80deg);
+        position: absolute;
+        top: -480px;
+        right: -550px;
+        opacity: 1;
+    }
+
+
+
 }
