@@ -22,10 +22,10 @@ body {
     height: 650px;
     overflow: hidden;
     /* Apply gradient at the bottom */
-    background-image: linear-gradient(to bottom, transparent 80%, #113352 100%);
+    /* background-image: linear-gradient(to bottom, transparent 80%, #113352 100%);
     background-size: 500px 100%;
     /* 300px width, full height */
-    background-position: center bottom;
+    /* background-position: center bottom; */
     /* Position the gradient at the bottom */
 }
 
