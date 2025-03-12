@@ -74,6 +74,10 @@ body {
     padding: 20px;
     margin-top: 140px;
 
+    background-color: rgba(0, 0, 0, 0.1); /* Slightly transparent black */
+    backdrop-filter: blur(1px); /* Apply a stronger, smoother blur */
+    border-radius: 35px; /* Optional: Rounded corners for a more mixed edge */
+
 }
 
 .carousel-content h2 {
