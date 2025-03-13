@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nextButton = document.querySelector('.carousel-button.next');
     let currentSlide = 0;
 
+
     // Function to apply GSAP animations based on the slide index
     function applyAnimations(index, direction) {
 
@@ -14,22 +15,47 @@ document.addEventListener('DOMContentLoaded', function () {
         if (index === 0) {
             // First carousel condition, set final positions without animation
 
+  
 
             if (direction === 'next') {
 
-                gsap.set('.carousel-image-1 .img1', {
+                gsap.fromTo('.carousel-image-1 .img1', {
+                    scale: 0.4,
+                    x: -250,
+                    y: -100,
+                    zIndex: 2,
+                    rotate:0,
+                    opacity: 1,
+
+                }, {
                     scale: 0.4,
                     x: -200,
                     y: -60,
-                    zIndex: 3
-                });
+                    zIndex: 3,
+                    rotate:0,
+                    opacity: 1,
+                    duration: 0.5
+                });               
 
-                gsap.set('.carousel-image-1 .img2', {
-                    scale: 0.4,
-                    rotate: 20,
+
+                gsap.fromTo('.carousel-image-1 .img2', {
+                    scale: 0.5,
+                    rotate:0,
                     x: -250,
                     y: -100,
-                    zIndex: 2
+                    rotate:10,
+                    zIndex: 2,
+                    opacity: 1,
+
+                }, {
+                    scale: 0.4,
+                    rotate: 10,
+                    x: -250,
+                    y: -100,
+                    rotate:20,
+                    zIndex: 2,
+                    opacity: 1,
+                    duration: 0.5
                 });
 
                 gsap.fromTo('.carousel-image-1 .img3', {
@@ -38,8 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     x: -576,
                     y: -480,
                     opacity: 1,
-                    
-
                 }, {
                     scale: 0.9,
                     x: -600,
@@ -47,10 +71,23 @@ document.addEventListener('DOMContentLoaded', function () {
                     rotate: 0,
                     opacity: 1,
                     duration: 0.5
-
-
                 });
 
+
+                gsap.fromTo('.carousel-image-1 .img3', {
+                    scale: 0.8,
+                    rotate: -79,
+                    x: -576,
+                    y: -480,
+                    opacity: 1,
+                }, {
+                    scale: 0.9,
+                    x: -600,
+                    y: -230,
+                    rotate: 0,
+                    opacity: 1,
+                    duration: 0.5
+                });
 
             }
 
