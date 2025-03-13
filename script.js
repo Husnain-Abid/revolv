@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (index === 0) {
             // First carousel condition, set final positions without animation
 
+
             if (direction === 'next') {
 
                 gsap.set('.carousel-image-1 .img1', {
@@ -31,11 +32,25 @@ document.addEventListener('DOMContentLoaded', function () {
                     zIndex: 2
                 });
 
-                gsap.set('.carousel-image-1 .img3', {
+                gsap.fromTo('.carousel-image-1 .img3', {
+                    scale: 0.8,
+                    rotate: -79,
+                    x: -576,
+                    y: -480,
+                    opacity: 1,
+                    
+
+                }, {
                     scale: 0.9,
                     x: -600,
-                    y: -230
+                    y: -230,
+                    rotate: 0,
+                    opacity: 1,
+                    duration: 0.5
+
+
                 });
+
 
             }
 
@@ -422,11 +437,11 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (index === 7) {
             // Carousel 8 animations, animating from previous position (index 6)
             gsap.fromTo('.carousel-image-8 .img3', {
-                scale: 0.5,
-                rotate: 15,
-                x: -580,
-                y: -550,
-                opacity: 0.1,
+                scale: 0.9,
+                    x: -600,
+                    y: -230,
+                    rotate: 0,
+                    opacity: 1,
             }, {
                 scale: 0.8,
                 rotate: -79,
